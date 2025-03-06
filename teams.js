@@ -1,5 +1,5 @@
 /**
- * Example React component for an "Teams" page. 
+ * Example React component for "Teams" page. 
  * Renders a list of teams with filtering, sorting, and search functionality.
  */
 
