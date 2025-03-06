@@ -1,0 +1,47 @@
+/******************************************************************************
+  CSS animation for in sentence rolling words (adadot static 2023)
+*******************************************************************************/
+
+#spin {
+  color: rgb(27, 214, 10);
+}
+
+#spin:after {
+  content: "legal";
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  0% { content: "work"; }
+  10% { content: "collaborate"; }
+  20% { content: "feel"; }
+  30% { content: "work"; }
+  40% { content: "collaborate"; }
+  50% { content: "feel"; }
+  60% { content: "work"; }
+  70% { content: "collaborate"; }
+  80% { content: "feel"; }
+  90% { content: "work"; }
+}
+
+.word {
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  animation: fadeInOut 20s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  5% { opacity: 1; }
+  15% { opacity: 0; }
+}
+
+.w1 { animation-delay: 0s; }
+.w2 { animation-delay: 4s; }
+.w3 { animation-delay: 8s; }
+.w4 { animation-delay: 12s; }
+.w5 { animation-delay: 16s; }
